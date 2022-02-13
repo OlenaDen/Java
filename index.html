@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preload" as="style" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/css/images/favicon.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <h1>
+        It's been <span id="timer">0</span> seconds since you loaded the page...
+    </h1>
+    <h3>The <code>document.write()</code> method writes something to the document.</h3>
+    <p>It replaces everything in the document, including the &lt;html&gt; element itself. Click the button below to
+        replace this whole document with some new content.</p>
+    <button onclick="replace();">Replace this document!</button>
+    <button id="switch" onclick="turnOff();">ON</button>
+
+    <h3>Current Kitchen Stock:</h3>
+    <ul>
+        <li>Flour</li>
+        <li>Sugar</li>
+        <li>Spices</li>
+    </ul>
+    <button onclick="createShoppingList();">
+        Create a Shopping List!
+    </button>
+
+    <!-- 47 challenge -->
+    <h3>Weather report</h3>
+    <button onclick="todayReport()">Today</button>
+    <button onclick="tomorrowReport()">Tomorrow</button>
+    <div id="report"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
